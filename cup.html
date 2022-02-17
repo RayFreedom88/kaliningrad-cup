@@ -1,324 +1,949 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
-    <title>KALININGRAD CUP</title>
-  </head>
 
-  <body>
-    <!-- HEADER -->
-    <header class="header">
-      <div class="container header__content">
-        <a href="#" class="header__logo">
-          <img src="./img/logo/fc_kld_logo.svg">
-        </a>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>KALININGRAD CUP</title>
+</head>
 
-        <div class="header__info">
-          <p class="header__broadcast">онлайн-трансляция</p>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__content">
+      <a href="#" class="header__logo">
+        <img src="./img/logo/fc_kld_logo.svg">
+      </a>
 
-          <nav class="header__navigation">
-            <ul class="header__nav-list">
-              <li class="header__nav-list-item">
-                <a class="header__nav-link" href="index.html">Главная</a>
-              </li>
+      <div class="header__info">
+        <p class="header__broadcast">онлайн-трансляция</p>
 
-              <li class="header__nav-list-item">
-                <a class="header__nav-link header__nav-link--active">KALININGRAD&nbsp;CUP</a>
-              </li>
-
-              <li class="header__nav-list-item">
-                <a class="header__nav-link" href="registration.html">Регистрация</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-
-        <!-- Компонент *CONTACTS* -->
-        <div class="header__contacts contacts">
-          <ul class="contacts__social-list">
-            <li>
-              <a href="#" title="Viber" class="contacts__social-link"></a>
+        <nav class="header__navigation">
+          <ul class="header__nav-list">
+            <li class="header__nav-list-item">
+              <a class="header__nav-link" href="index.html">Главная</a>
             </li>
 
-            <li>
-              <a href="#" title="Telegram" class="contacts__social-link"></a>
+            <li class="header__nav-list-item">
+              <a class="header__nav-link header__nav-link--active">KALININGRAD&nbsp;CUP</a>
             </li>
 
-            <li>
-              <a href="#" title="WhatsApp" class="contacts__social-link"></a>
-            </li>
-
-            <li>
-              <a href="#" title="VKontakte" class="contacts__social-link"></a>
-            </li>
-
-            <li>
-              <a href="#" title="Facebook" class="contacts__social-link"></a>
-            </li>
-
-            <li>
-              <a href="#" title="TikTok" class="contacts__social-link"></a>
-            </li>
-
-            <li>
-              <a href="#" title="YouTube"  class="contacts__social-link"></a>
-            </li>
-
-            <li>
-              <a href="#" title="Instagram" class="contacts__social-link"></a>
-            </li>
-
-            <li>
-              <a href="#" title="Twitter" class="contacts__social-link"></a>
-            </li>
-          </ul>
-
-          <ul class="contacts__links-list">
-            <li>
-              <a href="mailto:cup@kaliningradcup.ru" class="contact__link">cup@kaliningradcup.ru</a>
-            </li>
-            <li>
-              <a href="tel:+79114537364" class="contact__link">+7 (911) 453-73-64</a>
-            </li>
-          </ul>
-        </div>
-
-        <button class="burger header__burger" type="button">
-          <span class="burger__line"></span>
-          <span class="burger__line"></span>
-          <span class="burger__line"></span>
-        </button>
-      </div>
-    </header>
-
-    <main class="cup">
-      <h1 class="visually-hidden"> Страница KALININGRAD CUP</h1>
-
-      <!-- Секция *ИНТРО* -->
-      <section class="cup__intro">
-        <div class="container">
-          <h2 class="visually-hidden">Интро</h2>
-
-          <div class="cup__intro-info">
-            <div class="cup__intro-info-logo">
-              <img src="./img/logo/kld_cup_white.svg">
-            </div>
-          </div>
-
-          <div class="cup__intro-control league-control">
-            <p class="league-control__title">
-              <span class="league-control__season">Весна 2022</span>
-              <span class="league-control__group">U15</span>
-            </p>
-
-            <!-- Лиги *TABS* -->
-            <ul class="league-control__tabs-leag tabs">
-              <li class="tabs__item">
-                <a class="tabs__link tabs__link--active">
-                  Детская лига
-                </a>
-              </li>
-
-              <li class="tabs__item">
-                <a href="" class="tabs__link">
-                  Бизнес лига
-                </a>
-              </li>
-
-              <li class="tabs__item">
-                <a href="" class="tabs__link">
-                  Битва филиалов
-                </a>
-              </li>
-            </ul>
-
-            <!-- Селектор *SEASON* -->
-            <div class="league-control__select">
-
-              <select class="select-season" name="season" id="season">
-                <option class="select-season__option" value="1">Весна 2022</option>
-                <option class="select-season__option" value="2">Лето 2022</option>
-                <option class="select-season__option" value="3">Осень 2022</option>
-                <option class="select-season__option" value="4">Зима 2022</option>
-              </select>
-            </div>
-
-            <!-- Группы *TABS* -->
-            <ul class="league-control__tabs-group tabs">
-              <li class="tabs__item">
-                <a class="tabs__link tabs__link--active">U15</a>
-              </li>
-
-              <li class="tabs__item">
-                <a href="" class="tabs__link">U14</a>
-              </li>
-
-              <li class="tabs__item">
-                <a href="" class="tabs__link">U13</a>
-              </li>
-
-              <li class="tabs__item">
-                <a href="" class="tabs__link">U12</a>
-              </li>
-
-              <li class="tabs__item">
-                <a href="" class="tabs__link">U11</a>
-              </li>
-
-              <li class="tabs__item">
-                <a href="" class="tabs__link">U10</a>
-              </li>
-            </ul>
-
-            <div class="league-control__tables">
-              <!-- таблица *СЧЕТ* и *СЛАЙДЕР* (будущая, текущая и следующая игра) -->
-              <article class="table-wrap slider" id="lastMatch">
-                <h2 class="table-wrap__header">Последний матч</h2>
-
-                <div class="table-wrap__content table-wrap__content--last-match">
-                  <div class="slider__wrap">
-                    <div class="slider__line">
-                      <div class="score slider__slide">
-                        <p class="score__date">
-                          <span class="day">12 марта</span>,&nbsp;<span class="time">18:00</span>
-                        </p>
-                        <img src="./img/logo/teams/logo-1.png" alt="logo" class="score__team-logo score__team-logo--first">
-                        <p class="score__team-name score__team-name--first">Калининград</p>
-                        <p class="score__result">
-                          <span class="res-first">10</span>&nbsp;:&nbsp;<span class="res-second">10</span>
-                        </p>
-                        <p class="score__status">Завершён</p>
-                        <img src="./img/logo/teams/logo-2.png" alt="logo" class="score__team-logo score__team-logo--second">
-                        <p class="score__team-name score__team-name--second">Ташкент</p>
-                      </div>
-
-                      <div class="score slider__slide">
-                        <p class="score__date">
-                          <span class="day">10 марта</span>,&nbsp;<span class="time">18:00</span>
-                        </p>
-                        <img src="./img/logo/teams/logo-2.png" alt="logo" class="score__team-logo score__team-logo--first">
-                        <p class="score__team-name score__team-name--first">Ташкент</p>
-                        <p class="score__result">
-                          <span class="res-first">2</span>&nbsp;:&nbsp;<span class="res-second">2</span>
-                        </p>
-                        <p class="score__status">Завершён</p>
-                        <img src="./img/logo/teams/logo-2.png" alt="logo" class="score__team-logo score__team-logo--second">
-                        <p class="score__team-name score__team-name--second">Калининград</p>
-                      </div>
-
-                      <div class="score slider__slide">
-                        <p class="score__date">
-                          <span class="day">8 марта</span>,&nbsp;<span class="time">16:00</span>
-                        </p>
-                        <img src="./img/logo/teams/logo-1.png" alt="logo" class="score__team-logo score__team-logo--first">
-                        <p class="score__team-name score__team-name--first">Калининград</p>
-                        <p class="score__result">
-                          <span class="res-first">3</span>&nbsp;:&nbsp;<span class="res-second">4</span>
-                        </p>
-                        <p class="score__status">Завершён</p>
-                        <img src="./img/logo/teams/logo-2.png" alt="logo" class="score__team-logo score__team-logo--second">
-                        <p class="score__team-name score__team-name--second">Ташкент</p>
-                      </div>
-                    </div>
-                </div>
-
-                  <div class="slider__pagination">
-                    <button class="slider__button slider__button--left" type="button"></button>
-                    <p class="slider__pagination-number">
-                      <span class="current">1</span>&nbsp;/&nbsp;<span class="total">2</span>
-                    </p>
-                    <button class="slider__button slider__button--right" type="button"></button>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- *FOOTER* -->
-    <footer class="footer">
-      <div class="footer__content container">
-        <a href="#" class="footer__logo">
-          <img src="./img/logo/fc_kld_logo.svg">
-        </a>
-
-        <nav class="footer__navigation">
-          <ul class="footer__nav-list">
-            <li class="footer__nav-list-item">
-              <a class="footer__nav-link" href="index.html">Главная</a>
-            </li>
-
-            <li class="footer__nav-list-item">
-              <a class="footer__nav-link footer__nav-link--active">KALININGRAD&nbsp;CUP</a>
-            </li>
-
-            <li class="footer__nav-list-item">
-              <a class="footer__nav-link" href="registration.html">Регистрация</a>
+            <li class="header__nav-list-item">
+              <a class="header__nav-link" href="registration.html">Регистрация</a>
             </li>
           </ul>
         </nav>
+      </div>
 
-        <div class="footer__contacts contacts contacts--footer">
-          <ul class="contacts__social-list">
-            <li>
-              <a href="#" title="Viber" class="contacts__social-link"></a>
+      <!-- Компонент *CONTACTS* -->
+      <div class="header__contacts contacts">
+        <ul class="contacts__social-list">
+          <li>
+            <a href="#" title="Viber" class="contacts__social-link"></a>
+          </li>
+
+          <li>
+            <a href="#" title="Telegram" class="contacts__social-link"></a>
+          </li>
+
+          <li>
+            <a href="#" title="WhatsApp" class="contacts__social-link"></a>
+          </li>
+
+          <li>
+            <a href="#" title="VKontakte" class="contacts__social-link"></a>
+          </li>
+
+          <li>
+            <a href="#" title="Facebook" class="contacts__social-link"></a>
+          </li>
+
+          <li>
+            <a href="#" title="TikTok" class="contacts__social-link"></a>
+          </li>
+
+          <li>
+            <a href="#" title="YouTube" class="contacts__social-link"></a>
+          </li>
+
+          <li>
+            <a href="#" title="Instagram" class="contacts__social-link"></a>
+          </li>
+
+          <li>
+            <a href="#" title="Twitter" class="contacts__social-link"></a>
+          </li>
+        </ul>
+
+        <ul class="contacts__links-list">
+          <li>
+            <a href="mailto:cup@kaliningradcup.ru" class="contact__link">cup@kaliningradcup.ru</a>
+          </li>
+          <li>
+            <a href="tel:+79114537364" class="contact__link">+7 (911) 453-73-64</a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="burger header__burger" type="button">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="cup">
+    <h1 class="visually-hidden"> Страница KALININGRAD CUP</h1>
+
+    <!-- Секция *ИНТРО* -->
+    <section class="cup__intro">
+      <div class="container">
+        <h2 class="visually-hidden">Интро</h2>
+
+        <div class="cup__intro-info">
+          <div class="cup__intro-info-logo">
+            <img src="./img/logo/kld_cup_white.svg">
+          </div>
+        </div>
+
+        <div class="cup__intro-control league-control">
+          <p class="league-control__title">
+            <span class="league-control__season">Весна 2022</span>
+            <span class="league-control__group">U15</span>
+          </p>
+
+          <!-- Лиги *TABS* -->
+          <ul class="league-control__tabs-leag tabs">
+            <li class="tabs__item">
+              <a class="tabs__link tabs__link--active">
+                Детская лига
+              </a>
             </li>
 
-            <li>
-              <a href="#" title="Telegram" class="contacts__social-link"></a>
+            <li class="tabs__item">
+              <a href="" class="tabs__link">
+                Бизнес лига
+              </a>
             </li>
 
-            <li>
-              <a href="#" title="WhatsApp" class="contacts__social-link"></a>
-            </li>
-
-            <li>
-              <a href="#" title="VKontakte" class="contacts__social-link"></a>
-            </li>
-
-            <li>
-              <a href="#" title="Facebook" class="contacts__social-link"></a>
-            </li>
-
-            <li>
-              <a href="#" title="TikTok" class="contacts__social-link"></a>
-            </li>
-
-            <li>
-              <a href="#" title="YouTube"  class="contacts__social-link"></a>
-            </li>
-
-            <li>
-              <a href="#" title="Instagram" class="contacts__social-link"></a>
-            </li>
-
-            <li>
-              <a href="#" title="Twitter" class="contacts__social-link"></a>
+            <li class="tabs__item">
+              <a href="" class="tabs__link">
+                Битва филиалов
+              </a>
             </li>
           </ul>
 
-          <ul class="contacts__links-list">
-            <li>
-              <a href="mailto:cup@kaliningradcup.ru" class="contact__link">cup@kaliningradcup.ru</a>
+          <!-- Селектор *SEASON* -->
+          <div class="league-control__select">
+
+            <select class="select-season" name="season" id="season">
+              <option class="select-season__option" value="1">Весна 2022</option>
+              <option class="select-season__option" value="2">Лето 2022</option>
+              <option class="select-season__option" value="3">Осень 2022</option>
+              <option class="select-season__option" value="4">Зима 2022</option>
+            </select>
+          </div>
+
+          <!-- Группы *TABS* -->
+          <ul class="league-control__tabs-group tabs">
+            <li class="tabs__item">
+              <a class="tabs__link tabs__link--active">U15</a>
             </li>
-            <li>
-              <a href="tel:+79114537364" class="contact__link">+7 (911) 453-73-64</a>
+
+            <li class="tabs__item">
+              <a href="" class="tabs__link">U14</a>
+            </li>
+
+            <li class="tabs__item">
+              <a href="" class="tabs__link">U13</a>
+            </li>
+
+            <li class="tabs__item">
+              <a href="" class="tabs__link">U12</a>
+            </li>
+
+            <li class="tabs__item">
+              <a href="" class="tabs__link">U11</a>
+            </li>
+
+            <li class="tabs__item">
+              <a href="" class="tabs__link">U10</a>
             </li>
           </ul>
+
+          <div class="league-control__tables">
+            <!-- таблица *СЧЕТ* и *СЛАЙДЕР* (будущая, текущая и следующая игра) -->
+            <article class="table-wrap slider" id="lastMatch">
+              <h2 class="table-wrap__header">Последний матч</h2>
+
+              <div class="table-wrap__content table-wrap__content--last-match">
+                <div class="slider__wrap">
+                  <div class="slider__line">
+                    <div class="score slider__slide">
+                      <p class="score__date">
+                        <span class="day">12 марта</span>,&nbsp;<span class="time">18:00</span>
+                      </p>
+                      <img src="./img/logo/teams/logo-1.png" alt="logo" class="score__team-logo score__team-logo--first">
+                      <p class="score__team-name score__team-name--first">Калининград</p>
+                      <p class="score__result">
+                        <span class="res-first">10</span>&nbsp;:&nbsp;<span class="res-second">10</span>
+                      </p>
+                      <p class="score__status">Завершён</p>
+                      <img src="./img/logo/teams/logo-2.png" alt="logo" class="score__team-logo score__team-logo--second">
+                      <p class="score__team-name score__team-name--second">Ташкент</p>
+                    </div>
+
+                    <div class="score slider__slide">
+                      <p class="score__date">
+                        <span class="day">10 марта</span>,&nbsp;<span class="time">18:00</span>
+                      </p>
+                      <img src="./img/logo/teams/logo-2.png" alt="logo" class="score__team-logo score__team-logo--first">
+                      <p class="score__team-name score__team-name--first">Ташкент</p>
+                      <p class="score__result">
+                        <span class="res-first">2</span>&nbsp;:&nbsp;<span class="res-second">2</span>
+                      </p>
+                      <p class="score__status">Завершён</p>
+                      <img src="./img/logo/teams/logo-2.png" alt="logo" class="score__team-logo score__team-logo--second">
+                      <p class="score__team-name score__team-name--second">Калининград</p>
+                    </div>
+
+                    <div class="score slider__slide">
+                      <p class="score__date">
+                        <span class="day">8 марта</span>,&nbsp;<span class="time">16:00</span>
+                      </p>
+                      <img src="./img/logo/teams/logo-1.png" alt="logo" class="score__team-logo score__team-logo--first">
+                      <p class="score__team-name score__team-name--first">Калининград</p>
+                      <p class="score__result">
+                        <span class="res-first">3</span>&nbsp;:&nbsp;<span class="res-second">4</span>
+                      </p>
+                      <p class="score__status">Завершён</p>
+                      <img src="./img/logo/teams/logo-2.png" alt="logo" class="score__team-logo score__team-logo--second">
+                      <p class="score__team-name score__team-name--second">Ташкент</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slider__pagination">
+                  <button class="slider__button slider__button--left" type="button"></button>
+                  <p class="slider__pagination-number">
+                    <span class="current">1</span>&nbsp;/&nbsp;<span class="total">2</span>
+                  </p>
+                  <button class="slider__button slider__button--right" type="button"></button>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <button class="burger fixed-burger" type="button">
-      <span class="burger__line"></span>
-      <span class="burger__line"></span>
-      <span class="burger__line"></span>
-    </button>
-    <script src="js/main.min.js"></script>
-  </body>
+    <!-- Секция *ГРУПП* -->
+    <div class="cup__table-grop container">
+      <!-- Таблицы Группы A -->
+      <article class="table-wrap table-wrap--group">
+        <h2 class="table-wrap__header">Группа A</h2>
+
+        <div class="table-wrap__content">
+          <div class="table table--group">
+            <table class="table__main">
+              <tbody>
+                <!-- Row HEADER  -->
+                <tr class="table__row-header">
+                  <!-- th TEAM  -->
+                  <th class="table__header table__header--team table__fixed">
+                    <div class="table__wrap">
+                      <span class="table__span">Положение команд</span>
+                    </div>
+                  </th>
+                  <!-- th GAMES  -->
+                  <th class="table__header table__header--games" title="Игры">
+                    И
+                  </th>
+                  <!-- th WIN  -->
+                  <th class="table__header table__header--win" title="Выйграно">
+                    В
+                  </th>
+                  <!-- th DRAW  -->
+                  <th class="table__header table__header--draw" title="Ничья">
+                    Н
+                  </th>
+                  <!-- th LOST  -->
+                  <th class="table__header table__header--lost" title="Проиграно">
+                    П
+                  </th>
+                  <!-- th BALLS  -->
+                  <th class="table__header table__header--balls" title="Проиграно">
+                    М
+                  </th>
+                  <!-- th POINTS  -->
+                  <th class="table__header table__header--points" title="Очки">
+                    О
+                  </th>
+                </tr>
+
+                <!-- Row 1  -->
+                <tr class="table__row">
+                  <!-- td TEAM  -->
+                  <td class="table__body table__body--team table__fixed">
+                    <div class="table__wrap">
+                      <span class="table__span table__span--position">1</span>
+                      <span class="table__span table__span--img">
+                          <img src="./img/logo/teams/logo-1.png">
+                        </span>
+                      <span class="table__span table__span--team">
+                          Калининград
+                      </span>
+                    </div>
+                  </td>
+                  <!-- td GAMES -->
+                  <td class="table__body table__body--games">
+                    10
+                  </td>
+                  <!-- td WIN  -->
+                  <td class="table__body table__body--win">
+                    0
+                  </td>
+                  <!-- td DRAW -->
+                  <td class="table__body table__body--draw">
+                    20
+                  </td>
+                  <!-- th LOST  -->
+                  <td class="table__body table__body--lost">
+                    0
+                  </td>
+                  <!-- td BALLS  -->
+                  <td class="table__body table__body--balls">
+                    20-20
+                  </td>
+                  <!-- td POINTS  -->
+                  <td class="table__body table__body--points">
+                    30
+                  </td>
+                </tr>
+
+                <!-- Row 2  -->
+                <tr class="table__row">
+                  <!-- td TEAM  -->
+                  <td class="table__body table__body--team table__fixed">
+                    <div class="table__wrap">
+                      <span class="table__span table__span--position">2</span>
+                      <span class="table__span table__span--img">
+                          <img src="./img/logo/teams/logo-1.png">
+                        </span>
+                      <span class="table__span table__span--team">
+                          Калининград
+                        </span>
+                    </div>
+                  </td>
+                  <!-- td GAMES -->
+                  <td class="table__body table__body--games">
+                    10
+                  </td>
+                  <!-- td WIN  -->
+                  <td class="table__body table__body--win">
+                    0
+                  </td>
+                  <!-- td DRAW -->
+                  <td class="table__body table__body--draw">
+                    20
+                  </td>
+                  <!-- th LOST  -->
+                  <td class="table__body table__body--lost">
+                    0
+                  </td>
+                  <!-- td BALLS  -->
+                  <td class="table__body table__body--balls">
+                    20-20
+                  </td>
+                  <!-- td POINTS  -->
+                  <td class="table__body table__body--points">
+                    30
+                  </td>
+                </tr>
+
+                <!-- Row 3  -->
+                <tr class="table__row">
+                  <!-- td TEAM  -->
+                  <td class="table__body table__body--team table__fixed">
+                    <div class="table__wrap">
+                      <span class="table__span table__span--position">3</span>
+                      <span class="table__span table__span--img">
+                          <img src="./img/logo/teams/logo-1.png">
+                        </span>
+                      <span class="table__span table__span--team">
+                          Калининград
+                        </span>
+                    </div>
+                  </td>
+                  <!-- td GAMES -->
+                  <td class="table__body table__body--games">
+                    10
+                  </td>
+                  <!-- td WIN  -->
+                  <td class="table__body table__body--win">
+                    0
+                  </td>
+                  <!-- td DRAW -->
+                  <td class="table__body table__body--draw">
+                    20
+                  </td>
+                  <!-- th LOST  -->
+                  <td class="table__body table__body--lost">
+                    0
+                  </td>
+                  <!-- td BALLS  -->
+                  <td class="table__body table__body--balls">
+                    20-20
+                  </td>
+                  <!-- td POINTS  -->
+                  <td class="table__body table__body--points">
+                    30
+                  </td>
+                </tr>
+
+                <!-- Row 3  -->
+                <tr class="table__row">
+                  <!-- td TEAM  -->
+                  <td class="table__body table__body--team table__fixed">
+                    <div class="table__wrap">
+                      <span class="table__span table__span--position">4</span>
+                      <span class="table__span table__span--img">
+                          <img src="./img/logo/teams/logo-1.png">
+                        </span>
+                      <span class="table__span table__span--team">
+                          Калининград
+                        </span>
+                    </div>
+                  </td>
+                  <!-- td GAMES -->
+                  <td class="table__body table__body--games">
+                    10
+                  </td>
+                  <!-- td WIN  -->
+                  <td class="table__body table__body--win">
+                    0
+                  </td>
+                  <!-- td DRAW -->
+                  <td class="table__body table__body--draw">
+                    20
+                  </td>
+                  <!-- th LOST  -->
+                  <td class="table__body table__body--lost">
+                    0
+                  </td>
+                  <!-- td BALLS  -->
+                  <td class="table__body table__body--balls">
+                    20-20
+                  </td>
+                  <!-- td POINTS  -->
+                  <td class="table__body table__body--points">
+                    30
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </article>
+
+      <!-- Таблицы Группы B -->
+      <article class="table-wrap table-wrap--group">
+        <h2 class="table-wrap__header">Группа B</h2>
+
+        <div class="table-wrap__content">
+          <div class="table table--group">
+            <table class="table__main">
+              <tbody>
+                <!-- Row HEADER  -->
+                <tr class="table__row-header">
+                  <!-- th TEAM  -->
+                  <th class="table__header table__header--team table__fixed">
+                    <div class="table__wrap">
+                      <span class="table__span">Положение команд</span>
+                    </div>
+                  </th>
+                  <!-- th GAMES  -->
+                  <th class="table__header table__header--games" title="Игры">
+                    И
+                  </th>
+                  <!-- th WIN  -->
+                  <th class="table__header table__header--win" title="Выйграно">
+                    В
+                  </th>
+                  <!-- th DRAW  -->
+                  <th class="table__header table__header--draw" title="Ничья">
+                    Н
+                  </th>
+                  <!-- th LOST  -->
+                  <th class="table__header table__header--lost" title="Проиграно">
+                    П
+                  </th>
+                  <!-- th BALLS  -->
+                  <th class="table__header table__header--balls" title="Проиграно">
+                    М
+                  </th>
+                  <!-- th POINTS  -->
+                  <th class="table__header table__header--points" title="Очки">
+                    О
+                  </th>
+                </tr>
+
+                <!-- Row 1  -->
+                <tr class="table__row">
+                  <!-- td TEAM  -->
+                  <td class="table__body table__body--team table__fixed">
+                    <div class="table__wrap">
+                      <span class="table__span table__span--position">1</span>
+                      <span class="table__span table__span--img">
+                          <img src="./img/logo/teams/logo-1.png">
+                        </span>
+                      <span class="table__span table__span--team">
+                          Калининград
+                      </span>
+                    </div>
+                  </td>
+                  <!-- td GAMES -->
+                  <td class="table__body table__body--games">
+                    10
+                  </td>
+                  <!-- td WIN  -->
+                  <td class="table__body table__body--win">
+                    0
+                  </td>
+                  <!-- td DRAW -->
+                  <td class="table__body table__body--draw">
+                    20
+                  </td>
+                  <!-- th LOST  -->
+                  <td class="table__body table__body--lost">
+                    0
+                  </td>
+                  <!-- td BALLS  -->
+                  <td class="table__body table__body--balls">
+                    20-20
+                  </td>
+                  <!-- td POINTS  -->
+                  <td class="table__body table__body--points">
+                    30
+                  </td>
+                </tr>
+
+                <!-- Row 2  -->
+                <tr class="table__row">
+                  <!-- td TEAM  -->
+                  <td class="table__body table__body--team table__fixed">
+                    <div class="table__wrap">
+                      <span class="table__span table__span--position">2</span>
+                      <span class="table__span table__span--img">
+                          <img src="./img/logo/teams/logo-1.png">
+                        </span>
+                      <span class="table__span table__span--team">
+                          Калининград
+                        </span>
+                    </div>
+                  </td>
+                  <!-- td GAMES -->
+                  <td class="table__body table__body--games">
+                    10
+                  </td>
+                  <!-- td WIN  -->
+                  <td class="table__body table__body--win">
+                    0
+                  </td>
+                  <!-- td DRAW -->
+                  <td class="table__body table__body--draw">
+                    20
+                  </td>
+                  <!-- th LOST  -->
+                  <td class="table__body table__body--lost">
+                    0
+                  </td>
+                  <!-- td BALLS  -->
+                  <td class="table__body table__body--balls">
+                    20-20
+                  </td>
+                  <!-- td POINTS  -->
+                  <td class="table__body table__body--points">
+                    30
+                  </td>
+                </tr>
+
+                <!-- Row 3  -->
+                <tr class="table__row">
+                  <!-- td TEAM  -->
+                  <td class="table__body table__body--team table__fixed">
+                    <div class="table__wrap">
+                      <span class="table__span table__span--position">3</span>
+                      <span class="table__span table__span--img">
+                          <img src="./img/logo/teams/logo-1.png">
+                        </span>
+                      <span class="table__span table__span--team">
+                          Калининград
+                        </span>
+                    </div>
+                  </td>
+                  <!-- td GAMES -->
+                  <td class="table__body table__body--games">
+                    10
+                  </td>
+                  <!-- td WIN  -->
+                  <td class="table__body table__body--win">
+                    0
+                  </td>
+                  <!-- td DRAW -->
+                  <td class="table__body table__body--draw">
+                    20
+                  </td>
+                  <!-- th LOST  -->
+                  <td class="table__body table__body--lost">
+                    0
+                  </td>
+                  <!-- td BALLS  -->
+                  <td class="table__body table__body--balls">
+                    20-20
+                  </td>
+                  <!-- td POINTS  -->
+                  <td class="table__body table__body--points">
+                    30
+                  </td>
+                </tr>
+
+                <!-- Row 3  -->
+                <tr class="table__row">
+                  <!-- td TEAM  -->
+                  <td class="table__body table__body--team table__fixed">
+                    <div class="table__wrap">
+                      <span class="table__span table__span--position">4</span>
+                      <span class="table__span table__span--img">
+                          <img src="./img/logo/teams/logo-1.png">
+                        </span>
+                      <span class="table__span table__span--team">
+                          Калининград
+                        </span>
+                    </div>
+                  </td>
+                  <!-- td GAMES -->
+                  <td class="table__body table__body--games">
+                    10
+                  </td>
+                  <!-- td WIN  -->
+                  <td class="table__body table__body--win">
+                    0
+                  </td>
+                  <!-- td DRAW -->
+                  <td class="table__body table__body--draw">
+                    20
+                  </td>
+                  <!-- th LOST  -->
+                  <td class="table__body table__body--lost">
+                    0
+                  </td>
+                  <!-- td BALLS  -->
+                  <td class="table__body table__body--balls">
+                    20-20
+                  </td>
+                  <!-- td POINTS  -->
+                  <td class="table__body table__body--points">
+                    30
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </article>
+
+      <!-- Таблицы Группы C -->
+      <article class="table-wrap table-wrap--group">
+        <h2 class="table-wrap__header">Группа C</h2>
+
+        <div class="table-wrap__content">
+          <div class="table table--group">
+            <table class="table__main">
+              <tbody>
+                <!-- Row HEADER  -->
+                <tr class="table__row-header">
+                  <!-- th TEAM  -->
+                  <th class="table__header table__header--team table__fixed">
+                    <div class="table__wrap">
+                      <span class="table__span">Положение команд</span>
+                    </div>
+                  </th>
+                  <!-- th GAMES  -->
+                  <th class="table__header table__header--games" title="Игры">
+                    И
+                  </th>
+                  <!-- th WIN  -->
+                  <th class="table__header table__header--win" title="Выйграно">
+                    В
+                  </th>
+                  <!-- th DRAW  -->
+                  <th class="table__header table__header--draw" title="Ничья">
+                    Н
+                  </th>
+                  <!-- th LOST  -->
+                  <th class="table__header table__header--lost" title="Проиграно">
+                    П
+                  </th>
+                  <!-- th BALLS  -->
+                  <th class="table__header table__header--balls" title="Проиграно">
+                    М
+                  </th>
+                  <!-- th POINTS  -->
+                  <th class="table__header table__header--points" title="Очки">
+                    О
+                  </th>
+                </tr>
+
+                <!-- Row 1  -->
+                <tr class="table__row">
+                  <!-- td TEAM  -->
+                  <td class="table__body table__body--team table__fixed">
+                    <div class="table__wrap">
+                      <span class="table__span table__span--position">1</span>
+                      <span class="table__span table__span--img">
+                          <img src="./img/logo/teams/logo-1.png">
+                        </span>
+                      <span class="table__span table__span--team">
+                          Калининград
+                      </span>
+                    </div>
+                  </td>
+                  <!-- td GAMES -->
+                  <td class="table__body table__body--games">
+                    10
+                  </td>
+                  <!-- td WIN  -->
+                  <td class="table__body table__body--win">
+                    0
+                  </td>
+                  <!-- td DRAW -->
+                  <td class="table__body table__body--draw">
+                    20
+                  </td>
+                  <!-- th LOST  -->
+                  <td class="table__body table__body--lost">
+                    0
+                  </td>
+                  <!-- td BALLS  -->
+                  <td class="table__body table__body--balls">
+                    20-20
+                  </td>
+                  <!-- td POINTS  -->
+                  <td class="table__body table__body--points">
+                    30
+                  </td>
+                </tr>
+
+                <!-- Row 2  -->
+                <tr class="table__row">
+                  <!-- td TEAM  -->
+                  <td class="table__body table__body--team table__fixed">
+                    <div class="table__wrap">
+                      <span class="table__span table__span--position">2</span>
+                      <span class="table__span table__span--img">
+                          <img src="./img/logo/teams/logo-1.png">
+                        </span>
+                      <span class="table__span table__span--team">
+                          Калининград
+                        </span>
+                    </div>
+                  </td>
+                  <!-- td GAMES -->
+                  <td class="table__body table__body--games">
+                    10
+                  </td>
+                  <!-- td WIN  -->
+                  <td class="table__body table__body--win">
+                    0
+                  </td>
+                  <!-- td DRAW -->
+                  <td class="table__body table__body--draw">
+                    20
+                  </td>
+                  <!-- th LOST  -->
+                  <td class="table__body table__body--lost">
+                    0
+                  </td>
+                  <!-- td BALLS  -->
+                  <td class="table__body table__body--balls">
+                    20-20
+                  </td>
+                  <!-- td POINTS  -->
+                  <td class="table__body table__body--points">
+                    30
+                  </td>
+                </tr>
+
+                <!-- Row 3  -->
+                <tr class="table__row">
+                  <!-- td TEAM  -->
+                  <td class="table__body table__body--team table__fixed">
+                    <div class="table__wrap">
+                      <span class="table__span table__span--position">3</span>
+                      <span class="table__span table__span--img">
+                          <img src="./img/logo/teams/logo-1.png">
+                        </span>
+                      <span class="table__span table__span--team">
+                          Калининград
+                        </span>
+                    </div>
+                  </td>
+                  <!-- td GAMES -->
+                  <td class="table__body table__body--games">
+                    10
+                  </td>
+                  <!-- td WIN  -->
+                  <td class="table__body table__body--win">
+                    0
+                  </td>
+                  <!-- td DRAW -->
+                  <td class="table__body table__body--draw">
+                    20
+                  </td>
+                  <!-- th LOST  -->
+                  <td class="table__body table__body--lost">
+                    0
+                  </td>
+                  <!-- td BALLS  -->
+                  <td class="table__body table__body--balls">
+                    20-20
+                  </td>
+                  <!-- td POINTS  -->
+                  <td class="table__body table__body--points">
+                    30
+                  </td>
+                </tr>
+
+                <!-- Row 3  -->
+                <tr class="table__row">
+                  <!-- td TEAM  -->
+                  <td class="table__body table__body--team table__fixed">
+                    <div class="table__wrap">
+                      <span class="table__span table__span--position">4</span>
+                      <span class="table__span table__span--img">
+                          <img src="./img/logo/teams/logo-1.png">
+                        </span>
+                      <span class="table__span table__span--team">
+                          Калининград
+                        </span>
+                    </div>
+                  </td>
+                  <!-- td GAMES -->
+                  <td class="table__body table__body--games">
+                    10
+                  </td>
+                  <!-- td WIN  -->
+                  <td class="table__body table__body--win">
+                    0
+                  </td>
+                  <!-- td DRAW -->
+                  <td class="table__body table__body--draw">
+                    20
+                  </td>
+                  <!-- th LOST  -->
+                  <td class="table__body table__body--lost">
+                    0
+                  </td>
+                  <!-- td BALLS  -->
+                  <td class="table__body table__body--balls">
+                    20-20
+                  </td>
+                  <!-- td POINTS  -->
+                  <td class="table__body table__body--points">
+                    30
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+  <!-- *FOOTER* -->
+  <footer class="footer">
+    <div class="footer__content container">
+      <a href="#" class="footer__logo">
+        <img src="./img/logo/fc_kld_logo.svg">
+      </a>
+
+      <nav class="footer__navigation">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-list-item">
+            <a class="footer__nav-link" href="index.html">Главная</a>
+          </li>
+
+          <li class="footer__nav-list-item">
+            <a class="footer__nav-link footer__nav-link--active">KALININGRAD&nbsp;CUP</a>
+          </li>
+
+          <li class="footer__nav-list-item">
+            <a class="footer__nav-link" href="registration.html">Регистрация</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer__contacts contacts contacts--footer">
+        <ul class="contacts__social-list">
+          <li>
+            <a href="#" title="Viber" class="contacts__social-link"></a>
+          </li>
+
+          <li>
+            <a href="#" title="Telegram" class="contacts__social-link"></a>
+          </li>
+
+          <li>
+            <a href="#" title="WhatsApp" class="contacts__social-link"></a>
+          </li>
+
+          <li>
+            <a href="#" title="VKontakte" class="contacts__social-link"></a>
+          </li>
+
+          <li>
+            <a href="#" title="Facebook" class="contacts__social-link"></a>
+          </li>
+
+          <li>
+            <a href="#" title="TikTok" class="contacts__social-link"></a>
+          </li>
+
+          <li>
+            <a href="#" title="YouTube" class="contacts__social-link"></a>
+          </li>
+
+          <li>
+            <a href="#" title="Instagram" class="contacts__social-link"></a>
+          </li>
+
+          <li>
+            <a href="#" title="Twitter" class="contacts__social-link"></a>
+          </li>
+        </ul>
+
+        <ul class="contacts__links-list">
+          <li>
+            <a href="mailto:cup@kaliningradcup.ru" class="contact__link">cup@kaliningradcup.ru</a>
+          </li>
+          <li>
+            <a href="tel:+79114537364" class="contact__link">+7 (911) 453-73-64</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <button class="burger fixed-burger" type="button">
+    <span class="burger__line"></span>
+    <span class="burger__line"></span>
+    <span class="burger__line"></span>
+  </button>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>

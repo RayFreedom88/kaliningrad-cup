@@ -1,172 +1,173 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
-    <title>Регистрация</title>
-  </head>
 
-  <body>
-    <!-- HEADER -->
-    <header class="header">
-      <div class="container header__content">
-        <a href="#" class="header__logo">
-          <img src="./img/logo/fc_kld_logo.svg">
-        </a>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Регистрация</title>
+</head>
 
-        <div class="header__info">
-          <p class="header__broadcast">онлайн-трансляция</p>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__content">
+      <a href="#" class="header__logo">
+        <img src="./img/logo/fc_kld_logo.svg">
+      </a>
 
-          <nav class="header__navigation">
-            <ul class="header__nav-list">
-              <li class="header__nav-list-item">
-                <a class="header__nav-link" href="index.html">Главная</a>
-              </li>
+      <div class="header__info">
+        <p class="header__broadcast">онлайн-трансляция</p>
 
-              <li class="header__nav-list-item">
-                <a class="header__nav-link" href="cup.html">KALININGRAD&nbsp;CUP</a>
-              </li>
-
-              <li class="header__nav-list-item">
-                <a class="header__nav-link header__nav-link--active">Регистрация</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-
-        <!-- Компонент *CONTACTS* -->
-        <div class="header__contacts contacts">
-          <ul class="contacts__social-list">
-            <li>
-              <a href="#" title="Viber" class="contacts__social-link"></a>
+        <nav class="header__navigation">
+          <ul class="header__nav-list">
+            <li class="header__nav-list-item">
+              <a class="header__nav-link" href="index.html">Главная</a>
             </li>
 
-            <li>
-              <a href="#" title="Telegram" class="contacts__social-link"></a>
+            <li class="header__nav-list-item">
+              <a class="header__nav-link" href="cup.html">KALININGRAD&nbsp;CUP</a>
             </li>
 
-            <li>
-              <a href="#" title="WhatsApp" class="contacts__social-link"></a>
-            </li>
-
-            <li>
-              <a href="#" title="VKontakte" class="contacts__social-link"></a>
-            </li>
-
-            <li>
-              <a href="#" title="Facebook" class="contacts__social-link"></a>
-            </li>
-
-            <li>
-              <a href="#" title="TikTok" class="contacts__social-link"></a>
-            </li>
-
-            <li>
-              <a href="#" title="YouTube"  class="contacts__social-link"></a>
-            </li>
-
-            <li>
-              <a href="#" title="Instagram" class="contacts__social-link"></a>
-            </li>
-
-            <li>
-              <a href="#" title="Twitter" class="contacts__social-link"></a>
+            <li class="header__nav-list-item">
+              <a class="header__nav-link header__nav-link--active">Регистрация</a>
             </li>
           </ul>
-
-          <ul class="contacts__links-list">
-            <li>
-              <a href="mailto:cup@kaliningradcup.ru" class="contact__link">cup@kaliningradcup.ru</a>
-            </li>
-            <li>
-              <a href="tel:+79114537364" class="contact__link">+7 (911) 453-73-64</a>
-            </li>
-          </ul>
-        </div>
-
-        <button class="burger header__burger" type="button">
-          <span class="burger__line"></span>
-          <span class="burger__line"></span>
-          <span class="burger__line"></span>
-        </button>
+        </nav>
       </div>
-    </header>
 
-    <main class="reg">
-      <h1 class="visually-hidden">Страница регистрации</h1>
+      <!-- Компонент *CONTACTS* -->
+      <div class="header__contacts contacts">
+        <ul class="contacts__social-list">
+          <li>
+            <a href="#" title="Viber" class="contacts__social-link"></a>
+          </li>
 
-      <!-- Секция *РЕГИСТРАЦИЯ* -->
-      <section class="reg__section container">
-        <div class="reg__logo">
-          <img src="./img/logo/kld_cup_black.svg" alt="Логотип Kaliningrad CUP">
-        </div>
+          <li>
+            <a href="#" title="Telegram" class="contacts__social-link"></a>
+          </li>
 
-        <a class="reg__link" href="#">Детская лига</a>
+          <li>
+            <a href="#" title="WhatsApp" class="contacts__social-link"></a>
+          </li>
 
-        <!-- *FORM* -->
-        <form class="reg__form form" action="https://echo.htmlacademy.ru" method="GET">
+          <li>
+            <a href="#" title="VKontakte" class="contacts__social-link"></a>
+          </li>
 
-          <div class="form__fieldset-wrap">
-            <!-- fieldset *ИНФОРМАЦИЯ О КОМАНДЕ* -->
-            <fieldset class="form__fieldset">
-              <legend class="form__legend">Информация о команде</legend>
+          <li>
+            <a href="#" title="Facebook" class="contacts__social-link"></a>
+          </li>
 
-              <!-- input *НАЗВАНИЕ КЛУБА* -->
-              <div class="form__item">
-                <label for="edit-club-name">Название клуба *</label>
+          <li>
+            <a href="#" title="TikTok" class="contacts__social-link"></a>
+          </li>
 
-                <input class="form__input" type="text" id="edit-club-name" name="club-name" maxlength="50" required>
-              </div>
+          <li>
+            <a href="#" title="YouTube" class="contacts__social-link"></a>
+          </li>
 
-              <!-- input *КЛУБНЫЙ САЙТ* -->
-              <div class="form__item">
-                <label for="edit-club-site">Клубный сайт</label>
+          <li>
+            <a href="#" title="Instagram" class="contacts__social-link"></a>
+          </li>
 
-                <input class="form__input" type="text" id="edit-club-site" name="club-site">
-              </div>
+          <li>
+            <a href="#" title="Twitter" class="contacts__social-link"></a>
+          </li>
+        </ul>
 
-              <!-- input *ГОРОД* -->
-              <div class="form__item">
-                <label for="edit-city">Город *</label>
+        <ul class="contacts__links-list">
+          <li>
+            <a href="mailto:cup@kaliningradcup.ru" class="contact__link">cup@kaliningradcup.ru</a>
+          </li>
+          <li>
+            <a href="tel:+79114537364" class="contact__link">+7 (911) 453-73-64</a>
+          </li>
+        </ul>
+      </div>
 
-                <select class="select-form" name="city" id="edit-city" required>
-                  <option class="select-form__option" value="1">Калининград</option>
-                  <option class="select-form__option" value="2">Ташкент</option>
-                  <option class="select-form__option" value="3">Варшава</option>
-                  <option class="select-form__option" value="4">Уфа</option>
-                </select>
+      <button class="burger header__burger" type="button">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </header>
 
-                <!-- <input class="form__input" type="text" id="edit-city" name="city" required> -->
-              </div>
+  <main class="reg">
+    <h1 class="visually-hidden">Страница регистрации</h1>
 
-              <!-- input *СТРАНА* -->
-              <div class="form__item">
-                <label for="edit-country">Страна *</label>
+    <!-- Секция *РЕГИСТРАЦИЯ* -->
+    <section class="reg__section container">
+      <div class="reg__logo">
+        <img src="./img/logo/kld_cup_black.svg" alt="Логотип Kaliningrad CUP">
+      </div>
 
-                <select class="select-form" name="country" id="edit-country" required>
-                  <option class="select-form__option" value="1">Россия</option>
-                  <option class="select-form__option" value="2">Америка</option>
-                  <option class="select-form__option" value="3">Германия</option>
-                  <option class="select-form__option" value="4">Польша</option>
-                </select>
+      <a class="reg__link" href="#">Детская лига</a>
 
-                <!-- <input class="form__input" type="text" id="edit-country" name="country" required> -->
-              </div>
+      <!-- *FORM* -->
+      <form class="reg__form form" action="https://echo.htmlacademy.ru" method="GET">
 
-              <!-- input *ГРУППА* -->
-              <div class="form__item">
-                <label for="edit-group">Группа *</label>
+        <div class="form__fieldset-wrap">
+          <!-- fieldset *ИНФОРМАЦИЯ О КОМАНДЕ* -->
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Информация о команде</legend>
 
-                <select class="select-form" name="group" id="edit-group" required>
-                  <option class="select-form__option" value="1">Весна 2022</option>
-                  <option class="select-form__option" value="2">Лето 2022</option>
-                  <option class="select-form__option" value="3">Осень 2022</option>
-                  <option class="select-form__option" value="4">Зима 2022</option>
-                </select>
+            <!-- input *НАЗВАНИЕ КЛУБА* -->
+            <div class="form__item">
+              <label for="edit-club-name">Название клуба *</label>
 
-                <!-- <div class="selectInput">
+              <input class="form__input" type="text" id="edit-club-name" name="club-name" maxlength="50" required="">
+            </div>
+
+            <!-- input *КЛУБНЫЙ САЙТ* -->
+            <div class="form__item">
+              <label for="edit-club-site">Клубный сайт</label>
+
+              <input class="form__input" type="text" id="edit-club-site" name="club-site">
+            </div>
+
+            <!-- input *ГОРОД* -->
+            <div class="form__item">
+              <label for="edit-city">Город *</label>
+
+              <select class="select-form" name="city" id="edit-city" required="">
+                <option class="select-form__option" value="1">Калининград</option>
+                <option class="select-form__option" value="2">Ташкент</option>
+                <option class="select-form__option" value="3">Варшава</option>
+                <option class="select-form__option" value="4">Уфа</option>
+              </select>
+
+              <!-- <input class="form__input" type="text" id="edit-city" name="city" required> -->
+            </div>
+
+            <!-- input *СТРАНА* -->
+            <div class="form__item">
+              <label for="edit-country">Страна *</label>
+
+              <select class="select-form" name="country" id="edit-country" required="">
+                <option class="select-form__option" value="1">Россия</option>
+                <option class="select-form__option" value="2">Америка</option>
+                <option class="select-form__option" value="3">Германия</option>
+                <option class="select-form__option" value="4">Польша</option>
+              </select>
+
+              <!-- <input class="form__input" type="text" id="edit-country" name="country" required> -->
+            </div>
+
+            <!-- input *ГРУППА* -->
+            <div class="form__item">
+              <label for="edit-group">Группа *</label>
+
+              <select class="select-form" name="group" id="edit-group" required="">
+                <option class="select-form__option" value="1">Весна 2022</option>
+                <option class="select-form__option" value="2">Лето 2022</option>
+                <option class="select-form__option" value="3">Осень 2022</option>
+                <option class="select-form__option" value="4">Зима 2022</option>
+              </select>
+
+              <!-- <div class="selectInput">
                   <span class="selectLabel" id="edit-group">Группа *</span>
 
                   <div class="selectWrapper">
@@ -176,8 +177,8 @@
                       <option value="u8">-U8-</option>
                     </select> -->
 
-                    <!-- Hide the custom select from AT (e.g. SR) using aria-hidden -->
-                    <!-- <div class="selectCustom js-selectCustom" aria-hidden="true">
+              <!-- Hide the custom select from AT (e.g. SR) using aria-hidden -->
+              <!-- <div class="selectCustom js-selectCustom" aria-hidden="true">
                       <div class="selectCustom-trigger">Выберете группу...</div>
 
                       <div class="selectCustom-options">
@@ -187,148 +188,149 @@
                       </div>
                     </div>
                   </div> -->
-                <!-- </div> -->
-              </div>
-            </fieldset>
-
-            <!-- fieldset *КОНТАКТНАЯ ИНФОРМАЦИЯ* -->
-            <fieldset class="form__fieldset">
-              <legend class="form__legend">Контактная информация</legend>
-
-              <!-- input *ТРЕНЕР КОМАНДЫ* -->
-              <div class="form__item">
-                <label for="edit-team-coach">Тренер команды</label>
-                <input class="form__input" type="text" id="edit-team-coach" name="team-coach" maxlength="150">
-              </div>
-
-              <!-- input *МОБИЛЬНЫЙ ТЕЛЕФОН* -->
-              <div class="form__item">
-                <label for="edit-phone">Мобильный телефон *</label>
-                <input class="form__input" type="tel" id="edit-phone" name="phone" required>
-              </div>
-
-              <!-- input *ЭЛ. ПОЧТА* -->
-              <div class="form__item">
-                <label for="edit-mail">Эл. почта для связи *</label>
-                <input class="form__input" type="email" id="edit-email" name="email" required>
-              </div>
-
-              <!-- input *ДОП. ИНФОРМАЦИЯ* -->
-              <div class="form__item">
-                <label for="edit-add-info">Дополнительная информация</label>
-                <textarea name="add-info" id="edit-add-info" cols="30" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-              </div>
-            </fieldset>
-          </div>
-
-          <!-- fieldset *ЗАГРУЗИТЬ ЛОГО* -->
-          <fieldset class="form__fieldset form__fieldset--upload">
-            <div class="form__item">
-              <span class="form__label-span">Загрузить лого</span>
-
-              <!-- *FILE* -->
-              <input type="file" id="edit-image" name="image" multiple class="form__input-upload visually-hidden">
-
-              <label for="edit-image" class="form__label-upload button button--grey">
-                <span>Загрузить</span>
-              </label>
-
-              <p>Выберете изображение 10 мб</p>
+              <!-- </div> -->
             </div>
           </fieldset>
 
-          <!-- fieldset *ЗАРЕГИСТРИРОВАТЬСЯ* -->
-          <fieldset class="form__fieldset form__fieldset--submit">
+          <!-- fieldset *КОНТАКТНАЯ ИНФОРМАЦИЯ* -->
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Контактная информация</legend>
+
+            <!-- input *ТРЕНЕР КОМАНДЫ* -->
             <div class="form__item">
-              <button class="button" type="submit">
-                <span>Зарегистрироваться</span>
-              </button>
-              <p>* Обязательно для заполнения</p>
+              <label for="edit-team-coach">Тренер команды</label>
+              <input class="form__input" type="text" id="edit-team-coach" name="team-coach" maxlength="150">
+            </div>
+
+            <!-- input *МОБИЛЬНЫЙ ТЕЛЕФОН* -->
+            <div class="form__item">
+              <label for="edit-phone">Мобильный телефон *</label>
+              <input class="form__input" type="tel" id="edit-phone" name="phone" required="">
+            </div>
+
+            <!-- input *ЭЛ. ПОЧТА* -->
+            <div class="form__item">
+              <label for="edit-mail">Эл. почта для связи *</label>
+              <input class="form__input" type="email" id="edit-email" name="email" required="">
+            </div>
+
+            <!-- input *ДОП. ИНФОРМАЦИЯ* -->
+            <div class="form__item">
+              <label for="edit-add-info">Дополнительная информация</label>
+              <textarea name="add-info" id="edit-add-info" cols="30" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
           </fieldset>
-        </form>
-      </section>
-    </main>
-
-    <!-- *FOOTER* -->
-    <footer class="footer">
-      <div class="footer__content container">
-        <a href="#" class="footer__logo">
-          <img src="./img/logo/fc_kld_logo.svg">
-        </a>
-
-        <nav class="footer__navigation">
-          <ul class="footer__nav-list">
-            <li class="footer__nav-list-item">
-              <a class="footer__nav-link" href="index.html">Главная</a>
-            </li>
-
-            <li class="footer__nav-list-item">
-              <a class="footer__nav-link" href="cup.html">KALININGRAD&nbsp;CUP</a>
-            </li>
-
-            <li class="footer__nav-list-item">
-              <a class="footer__nav-link footer__nav-link--active">Регистрация</a>
-            </li>
-          </ul>
-        </nav>
-
-        <div class="footer__contacts contacts contacts--footer">
-          <ul class="contacts__social-list">
-            <li>
-              <a href="#" title="Viber" class="contacts__social-link"></a>
-            </li>
-
-            <li>
-              <a href="#" title="Telegram" class="contacts__social-link"></a>
-            </li>
-
-            <li>
-              <a href="#" title="WhatsApp" class="contacts__social-link"></a>
-            </li>
-
-            <li>
-              <a href="#" title="VKontakte" class="contacts__social-link"></a>
-            </li>
-
-            <li>
-              <a href="#" title="Facebook" class="contacts__social-link"></a>
-            </li>
-
-            <li>
-              <a href="#" title="TikTok" class="contacts__social-link"></a>
-            </li>
-
-            <li>
-              <a href="#" title="YouTube"  class="contacts__social-link"></a>
-            </li>
-
-            <li>
-              <a href="#" title="Instagram" class="contacts__social-link"></a>
-            </li>
-
-            <li>
-              <a href="#" title="Twitter" class="contacts__social-link"></a>
-            </li>
-          </ul>
-
-          <ul class="contacts__links-list">
-            <li>
-              <a href="mailto:cup@kaliningradcup.ru" class="contact__link">cup@kaliningradcup.ru</a>
-            </li>
-            <li>
-              <a href="tel:+79114537364" class="contact__link">+7 (911) 453-73-64</a>
-            </li>
-          </ul>
         </div>
-      </div>
-    </footer>
 
-    <button class="burger fixed-burger" type="button">
-      <span class="burger__line"></span>
-      <span class="burger__line"></span>
-      <span class="burger__line"></span>
-    </button>
-    <script src="js/main.min.js"></script>
-  </body>
+        <!-- fieldset *ЗАГРУЗИТЬ ЛОГО* -->
+        <fieldset class="form__fieldset form__fieldset--upload">
+          <div class="form__item">
+            <span class="form__label-span">Загрузить лого</span>
+
+            <!-- *FILE* -->
+            <input type="file" id="edit-image" name="image" multiple="" class="form__input-upload visually-hidden">
+
+            <label for="edit-image" class="form__label-upload button button--grey">
+              <span>Загрузить</span>
+            </label>
+
+            <p>Выберете изображение 10 мб</p>
+          </div>
+        </fieldset>
+
+        <!-- fieldset *ЗАРЕГИСТРИРОВАТЬСЯ* -->
+        <fieldset class="form__fieldset form__fieldset--submit">
+          <div class="form__item">
+            <button class="button" type="submit">
+              <span>Зарегистрироваться</span>
+            </button>
+            <p>* Обязательно для заполнения</p>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <!-- *FOOTER* -->
+  <footer class="footer">
+    <div class="footer__content container">
+      <a href="#" class="footer__logo">
+        <img src="./img/logo/fc_kld_logo.svg">
+      </a>
+
+      <nav class="footer__navigation">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-list-item">
+            <a class="footer__nav-link" href="index.html">Главная</a>
+          </li>
+
+          <li class="footer__nav-list-item">
+            <a class="footer__nav-link" href="cup.html">KALININGRAD&nbsp;CUP</a>
+          </li>
+
+          <li class="footer__nav-list-item">
+            <a class="footer__nav-link footer__nav-link--active">Регистрация</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer__contacts contacts contacts--footer">
+        <ul class="contacts__social-list">
+          <li>
+            <a href="#" title="Viber" class="contacts__social-link"></a>
+          </li>
+
+          <li>
+            <a href="#" title="Telegram" class="contacts__social-link"></a>
+          </li>
+
+          <li>
+            <a href="#" title="WhatsApp" class="contacts__social-link"></a>
+          </li>
+
+          <li>
+            <a href="#" title="VKontakte" class="contacts__social-link"></a>
+          </li>
+
+          <li>
+            <a href="#" title="Facebook" class="contacts__social-link"></a>
+          </li>
+
+          <li>
+            <a href="#" title="TikTok" class="contacts__social-link"></a>
+          </li>
+
+          <li>
+            <a href="#" title="YouTube" class="contacts__social-link"></a>
+          </li>
+
+          <li>
+            <a href="#" title="Instagram" class="contacts__social-link"></a>
+          </li>
+
+          <li>
+            <a href="#" title="Twitter" class="contacts__social-link"></a>
+          </li>
+        </ul>
+
+        <ul class="contacts__links-list">
+          <li>
+            <a href="mailto:cup@kaliningradcup.ru" class="contact__link">cup@kaliningradcup.ru</a>
+          </li>
+          <li>
+            <a href="tel:+79114537364" class="contact__link">+7 (911) 453-73-64</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <button class="burger fixed-burger" type="button">
+    <span class="burger__line"></span>
+    <span class="burger__line"></span>
+    <span class="burger__line"></span>
+  </button>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>
