@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
-  <title>KALININGRAD CUP</title>
+  <title>Таблицы</title>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
             </li>
 
             <li class="header__nav-list-item">
-              <a class="header__nav-link header__nav-link--active">KALININGRAD&nbsp;CUP</a>
+              <a class="header__nav-link" href="cup.html">KALININGRAD&nbsp;CUP</a>
             </li>
 
             <li class="header__nav-list-item">
@@ -35,7 +35,7 @@
             </li>
 
             <li class="header__nav-list-item">
-              <a class="header__nav-link" href="table.html">Таблицы</a>
+              <a class="header__nav-link header__nav-link--active">Таблицы</a>
             </li>
           </ul>
         </nav>
@@ -99,21 +99,33 @@
     </div>
   </header>
 
-  <main class="cup">
-    <h1 class="visually-hidden"> Страница KALININGRAD CUP</h1>
-
+  <main class="markup">
     <!-- Секция *ИНТРО* -->
-    <section class="cup__intro">
+    <!-- Внутри Таблица *ПРЕДВАРИТЕЛЬНЫЙ СПИСОК* -->
+    <section class="main__intro">
       <div class="container">
         <h2 class="visually-hidden">Интро</h2>
 
-        <div class="cup__intro-info">
-          <div class="cup__intro-info-logo">
-            <img src="./img/logo/kld_cup_white.svg">
+        <div class="main__intro-info">
+          <div class="main__intro-info-logo">
+            <img src="./img/logo/kld_cup_intro.svg">
+          </div>
+
+          <div class="main__intro-info-wrap">
+            <div class="main__intro-info-title">
+              <h3>Kaliningrad Cup <span class="main__intro-season">Весна 2022</span></h3>
+            </div>
+
+            <div class="main__intro-info-reg">
+              <p>Зарегистрируйся на KALININGRAD&nbsp;CUP ВЕСНА&nbsp;ИЛИ&nbsp;ОСЕНЬ</p>
+              <a class="main__intro-info-link button" href="registration.html">
+                <span>Зарегистрироваться</span>
+              </a>
+            </div>
           </div>
         </div>
 
-        <div class="cup__intro-control league-control">
+        <div class="main__intro-control league-control">
           <p class="league-control__title">
             <span class="league-control__season">Весна 2022</span>
             <span class="league-control__group">U15</span>
@@ -140,9 +152,8 @@
             </li>
           </ul>
 
-          <!-- Селектор *SEASON* -->
           <div class="league-control__select">
-
+            <!-- Селектор *SEASON* -->
             <select class="select-season" name="season" id="season">
               <option class="select-season__option" value="1">Весна 2022</option>
               <option class="select-season__option" value="2">Лето 2022</option>
@@ -179,63 +190,84 @@
           </ul>
 
           <div class="league-control__tables">
-            <!-- таблица *СЧЕТ* и *СЛАЙДЕР* (будущая, текущая и следующая игра) -->
-            <article class="table-wrap slider" id="lastMatch">
-              <h2 class="table-wrap__header">Последний матч</h2>
+            <!-- Таблица *ПРЕДВАРИТЕЛЬНЫЙ СПИСОК* -->
+            <article class="markup__table-grop-item table-wrap">
+              <h2 class="table-wrap__header">Предварительный список команд</h2>
 
-              <div class="table-wrap__content table-wrap__content--last-match">
-                <div class="slider__wrap">
-                  <div class="slider__line">
-                    <div class="score slider__slide">
-                      <p class="score__date">
-                        <span class="day">12 марта</span>,&nbsp;<span class="time">18:00</span>
-                      </p>
-                      <img src="./img/logo/teams/logo-1.png" alt="logo" class="score__team-logo score__team-logo--first">
-                      <p class="score__team-name score__team-name--first">Калининград</p>
-                      <p class="score__result">
-                        <span class="res-first">10</span>&nbsp;:&nbsp;<span class="res-second">10</span>
-                      </p>
-                      <p class="score__status">Завершён</p>
-                      <img src="./img/logo/teams/logo-2.png" alt="logo" class="score__team-logo score__team-logo--second">
-                      <p class="score__team-name score__team-name--second">Ташкент</p>
-                    </div>
+              <div class="table-wrap__content">
+                <div class="table table--pre-list">
+                  <table class="table__main">
+                    <tbody>
+                      <!-- Row 1  -->
+                      <tr class="table__row">
+                        <!-- td Position  -->
+                        <td class="table__body table__body--position">
+                          <div class="table__wrap">
+                            <span class="table__span">1</span>
+                          </div>
 
-                    <div class="score slider__slide">
-                      <p class="score__date">
-                        <span class="day">10 марта</span>,&nbsp;<span class="time">18:00</span>
-                      </p>
-                      <img src="./img/logo/teams/logo-2.png" alt="logo" class="score__team-logo score__team-logo--first">
-                      <p class="score__team-name score__team-name--first">Ташкент</p>
-                      <p class="score__result">
-                        <span class="res-first">2</span>&nbsp;:&nbsp;<span class="res-second">2</span>
-                      </p>
-                      <p class="score__status">Завершён</p>
-                      <img src="./img/logo/teams/logo-2.png" alt="logo" class="score__team-logo score__team-logo--second">
-                      <p class="score__team-name score__team-name--second">Калининград</p>
-                    </div>
+                          <div class="table__img-wrap">
+                            <div class="table__img">
+                              <img src="./img/logo/teams/logo-1.png">
+                            </div>
+                          </div>
+                        </td>
 
-                    <div class="score slider__slide">
-                      <p class="score__date">
-                        <span class="day">8 марта</span>,&nbsp;<span class="time">16:00</span>
-                      </p>
-                      <img src="./img/logo/teams/logo-1.png" alt="logo" class="score__team-logo score__team-logo--first">
-                      <p class="score__team-name score__team-name--first">Калининград</p>
-                      <p class="score__result">
-                        <span class="res-first">3</span>&nbsp;:&nbsp;<span class="res-second">4</span>
-                      </p>
-                      <p class="score__status">Завершён</p>
-                      <img src="./img/logo/teams/logo-2.png" alt="logo" class="score__team-logo score__team-logo--second">
-                      <p class="score__team-name score__team-name--second">Ташкент</p>
-                    </div>
-                  </div>
-                </div>
+                        <!-- td Team  -->
+                        <td class="table__body table__body--team">
+                          <div class="table__team-wrap">
+                            <span class="table__team-span">Калининград</span>
+                          </div>
+                        </td>
+                      </tr>
 
-                <div class="slider__pagination">
-                  <button class="slider__button slider__button--left" type="button"></button>
-                  <p class="slider__pagination-number">
-                    <span class="current">1</span>&nbsp;/&nbsp;<span class="total">2</span>
-                  </p>
-                  <button class="slider__button slider__button--right" type="button"></button>
+                      <!-- Row 2  -->
+                      <tr class="table__row">
+                        <!-- td Position  -->
+                        <td class="table__body table__body--position">
+                          <div class="table__wrap">
+                            <span class="table__span">2</span>
+                          </div>
+
+                          <div class="table__img-wrap">
+                            <div class="table__img">
+                              <img src="./img/logo/teams/logo-2.png">
+                            </div>
+                          </div>
+                        </td>
+
+                        <!-- td Team  -->
+                        <td class="table__body table__body--team">
+                          <div class="table__team-wrap">
+                            <span class="table__team-span">Калининград</span>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!-- Row 3  -->
+                      <tr class="table__row">
+                        <!-- td Position  -->
+                        <td class="table__body table__body--position">
+                          <div class="table__wrap">
+                            <span class="table__span">3</span>
+                          </div>
+
+                          <div class="table__img-wrap">
+                            <div class="table__img">
+                              <img src="./img/logo/teams/logo-1.png">
+                            </div>
+                          </div>
+                        </td>
+
+                        <!-- td Team  -->
+                        <td class="table__body table__body--team">
+                          <div class="table__team-wrap">
+                            <span class="table__team-span">Калининград</span>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </article>
@@ -244,8 +276,73 @@
       </div>
     </section>
 
+    <!-- таблица *СЧЕТ* и *СЛАЙДЕР* (будущая, текущая и следующая игра) -->
+    <div class="container">
+      <div class="markup__table-grop">
+        <article class="table-wrap slider" id="lastMatch">
+          <h2 class="table-wrap__header">Последний матч</h2>
+
+          <div class="table-wrap__content table-wrap__content--last-match">
+            <div class="slider__wrap">
+              <div class="slider__line">
+                <div class="score slider__slide">
+                  <p class="score__date">
+                    <span class="day">12 марта</span>,&nbsp;<span class="time">18:00</span>
+                  </p>
+                  <img src="./img/logo/teams/logo-1.png" alt="logo" class="score__team-logo score__team-logo--first">
+                  <p class="score__team-name score__team-name--first">Калининград</p>
+                  <p class="score__result">
+                    <span class="res-first">10</span>&nbsp;:&nbsp;<span class="res-second">10</span>
+                  </p>
+                  <p class="score__status">Завершён</p>
+                  <img src="./img/logo/teams/logo-2.png" alt="logo" class="score__team-logo score__team-logo--second">
+                  <p class="score__team-name score__team-name--second">Ташкент</p>
+                </div>
+
+                <div class="score slider__slide">
+                  <p class="score__date">
+                    <span class="day">10 марта</span>,&nbsp;<span class="time">18:00</span>
+                  </p>
+                  <img src="./img/logo/teams/logo-2.png" alt="logo" class="score__team-logo score__team-logo--first">
+                  <p class="score__team-name score__team-name--first">Ташкент</p>
+                  <p class="score__result">
+                    <span class="res-first">2</span>&nbsp;:&nbsp;<span class="res-second">2</span>
+                  </p>
+                  <p class="score__status">Завершён</p>
+                  <img src="./img/logo/teams/logo-2.png" alt="logo" class="score__team-logo score__team-logo--second">
+                  <p class="score__team-name score__team-name--second">Калининград</p>
+                </div>
+
+                <div class="score slider__slide">
+                  <p class="score__date">
+                    <span class="day">8 марта</span>,&nbsp;<span class="time">16:00</span>
+                  </p>
+                  <img src="./img/logo/teams/logo-1.png" alt="logo" class="score__team-logo score__team-logo--first">
+                  <p class="score__team-name score__team-name--first">Калининград</p>
+                  <p class="score__result">
+                    <span class="res-first">3</span>&nbsp;:&nbsp;<span class="res-second">4</span>
+                  </p>
+                  <p class="score__status">Завершён</p>
+                  <img src="./img/logo/teams/logo-2.png" alt="logo" class="score__team-logo score__team-logo--second">
+                  <p class="score__team-name score__team-name--second">Ташкент</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider__pagination">
+              <button class="slider__button slider__button--left" type="button"></button>
+              <p class="slider__pagination-number">
+                <span class="current">1</span>&nbsp;/&nbsp;<span class="total">2</span>
+              </p>
+              <button class="slider__button slider__button--right" type="button"></button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
     <!-- Секция *РАСПИСАНИЕ* -->
-    <div class="cup__table-schedule container">
+    <div class="cup__table-schedule container" style="margin-top: 30px;">
       <!-- Таблица *РАСПИСАНИЕ* -->
       <article class="table-wrap table-wrap--schedule">
         <h2 class="table-wrap__header">Расписание матчей</h2>
@@ -317,6 +414,34 @@
                       <div class="score score--schedule">
                         <p class="score__date">
                           <span class="day">14 марта</span>,&nbsp;<span class="time">18:00</span>
+                        </p>
+
+                        <img src="./img/logo/teams/logo-1.png" alt="logo" class="score__team-logo score__team-logo--first">
+
+                        <p class="score__team-name score__team-name--first">Калининград</p>
+
+                        <p class="score__result">
+                          <span class="res-first">10</span>&nbsp;:&nbsp;<span class="res-second">10</span>
+                        </p>
+
+
+                        <p class="score__status">Еще не начался</p>
+
+                        <img src="./img/logo/teams/logo-2.png" alt="logo" class="score__team-logo score__team-logo--second">
+
+                        <p class="score__team-name score__team-name--second">Ташкент</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- Row 3  -->
+                <tr class="table__row">
+                  <td class="table__body">
+                    <div class="table__team-wrap">
+                      <div class="score score--schedule">
+                        <p class="score__date">
+                          <span class="day">15 марта</span>,&nbsp;<span class="time">18:00</span>
                         </p>
 
                         <img src="./img/logo/teams/logo-1.png" alt="logo" class="score__team-logo score__team-logo--first">
@@ -967,7 +1092,133 @@
         </div>
       </article>
     </div>
+
+    <!-- Таблица *ФОРМАТ KALININGRAD CUP* -->
+    <div class="container">
+      <div class="markup__table-grop">
+        <article class="markup__table-grop-item table-wrap">
+          <div class="table-wrap__content">
+            <div class="table table--format">
+              <table class="table__main">
+                <tbody>
+                  <!-- Row HEADER  -->
+                  <tr class="table__row-header">
+                    <th class="table__header table__header--year table__fixed">
+                      <div class="table__wrap">
+                        <span class="table__span">Год</span>
+                      </div>
+                    </th>
+                    <th class="table__header table__header--data">Сроки</th>
+                    <th class="table__header table__header--format">Формат</th>
+                    <th class="table__header table__header--fieldSize">Размер <br>пол</th>
+                    <th class="table__header table__header--gateSize">Размер <br>ворот</th>
+                    <th class="table__header table__header--ballNumber">Мяч №</th>
+                    <th class="table__header table__header--offside">Вне <br>игры</th>
+                    <th class="table__header table__header--period">Тайм</th>
+                    <th class="table__header table__header--players">Кол-во <br>игр</th>
+                    <th class="table__header table__header--donation">Взнос</th>
+                  </tr>
+
+                  <!-- Row 1  -->
+                  <tr class="table__row">
+                    <td class="table__body table__body--year table__fixed">
+                      <div class="table__wrap">
+                        <span class="table__span">2010</span>
+                      </div>
+                    </td>
+                    <td class="table__body table__body--data">25.03-27.03</td>
+                    <td class="table__body table__body--format">4+1</td>
+                    <td class="table__body table__body--fieldSize">40х20</td>
+                    <td class="table__body table__body--gateSize">2х3</td>
+                    <td class="table__body table__body--ballNumber">4</td>
+                    <td class="table__body table__body--offside">Нет</td>
+                    <td class="table__body table__body--period">2/20 мин</td>
+                    <td class="table__body table__body--players">6</td>
+                    <td class="table__body table__body--donation">25000</td>
+                  </tr>
+
+                  <!-- Row 2  -->
+                  <tr class="table__row">
+                    <td class="table__body table__body--year table__fixed">
+                      <div class="table__wrap">
+                        <span class="table__span">2011</span>
+                      </div>
+                    </td>
+                    <td class="table__body table__body--data">25.03-27.03</td>
+                    <td class="table__body table__body--format">4+1</td>
+                    <td class="table__body table__body--fieldSize">40х20</td>
+                    <td class="table__body table__body--gateSize">2х3</td>
+                    <td class="table__body table__body--ballNumber">4</td>
+                    <td class="table__body table__body--offside">Нет</td>
+                    <td class="table__body table__body--period">2/20 мин</td>
+                    <td class="table__body table__body--players">6</td>
+                    <td class="table__body table__body--donation">25000</td>
+                  </tr>
+
+                  <!-- Row 3  -->
+                  <tr class="table__row">
+                    <td class="table__body table__body--year table__fixed">
+                      <div class="table__wrap">
+                        <span class="table__span">2012</span>
+                      </div>
+                    </td>
+                    <td class="table__body table__body--data">25.03-27.03</td>
+                    <td class="table__body table__body--format">4+1</td>
+                    <td class="table__body table__body--fieldSize">40х20</td>
+                    <td class="table__body table__body--gateSize">2х3</td>
+                    <td class="table__body table__body--ballNumber">4</td>
+                    <td class="table__body table__body--offside">Нет</td>
+                    <td class="table__body table__body--period">2/20 мин</td>
+                    <td class="table__body table__body--players">6</td>
+                    <td class="table__body table__body--donation">25000</td>
+                  </tr>
+
+                  <!-- Row 4  -->
+                  <tr class="table__row">
+                    <td class="table__body table__body--year table__fixed">
+                      <div class="table__wrap">
+                        <span class="table__span">2013</span>
+                      </div>
+                    </td>
+                    <td class="table__body table__body--data">25.03-27.03</td>
+                    <td class="table__body table__body--format">4+1</td>
+                    <td class="table__body table__body--fieldSize">40х20</td>
+                    <td class="table__body table__body--gateSize">2х3</td>
+                    <td class="table__body table__body--ballNumber">4</td>
+                    <td class="table__body table__body--offside">Нет</td>
+                    <td class="table__body table__body--period">2/20 мин</td>
+                    <td class="table__body table__body--players">6</td>
+                    <td class="table__body table__body--donation">25000</td>
+                  </tr>
+
+                  <!-- Row 5  -->
+                  <tr class="table__row">
+                    <td class="table__body table__body--year table__fixed">
+                      <div class="table__wrap">
+                        <span class="table__span">2015</span>
+                      </div>
+                    </td>
+                    <td class="table__body table__body--data">25.03-27.03</td>
+                    <td class="table__body table__body--format">4+1</td>
+                    <td class="table__body table__body--fieldSize">40х20</td>
+                    <td class="table__body table__body--gateSize">2х3</td>
+                    <td class="table__body table__body--ballNumber">4</td>
+                    <td class="table__body table__body--offside">Нет</td>
+                    <td class="table__body table__body--period">2/20 мин</td>
+                    <td class="table__body table__body--players">6</td>
+                    <td class="table__body table__body--donation">25000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+
   </main>
+
   <!-- *FOOTER* -->
   <footer class="footer">
     <div class="footer__content container">
@@ -982,11 +1233,15 @@
           </li>
 
           <li class="footer__nav-list-item">
-            <a class="footer__nav-link footer__nav-link--active">KALININGRAD&nbsp;CUP</a>
+            <a class="footer__nav-link" href="cup.html">KALININGRAD&nbsp;CUP</a>
           </li>
 
           <li class="footer__nav-list-item">
             <a class="footer__nav-link" href="registration.html">Регистрация</a>
+          </li>
+
+          <li class="footer__nav-list-item">
+            <a class="footer__nav-link footer__nav-link--active">Таблицы</a>
           </li>
         </ul>
       </nav>
@@ -1047,7 +1302,7 @@
     <span class="burger__line"></span>
     <span class="burger__line"></span>
   </button>
-  <script src="js/main.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
