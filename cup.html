@@ -180,12 +180,13 @@
 
           <div class="league-control__tables">
             <!-- таблица *СЧЕТ* и *СЛАЙДЕР* (будущая, текущая и следующая игра) -->
-            <article class="table-wrap slider" id="lastMatch">
-              <h2 class="table-wrap__header">Последний матч</h2>
+            <article class="table-wrap slider" id="matchStatus">
+              <h2 class="table-wrap__header"></h2>
 
               <div class="table-wrap__content table-wrap__content--last-match">
                 <div class="slider__wrap">
                   <div class="slider__line">
+                    <!-- slide 1 -->
                     <div class="score slider__slide">
                       <p class="score__date">
                         <span class="day">12 марта</span>,&nbsp;<span class="time">18:00</span>
@@ -200,30 +201,32 @@
                       <p class="score__team-name score__team-name--second">Ташкент</p>
                     </div>
 
-                    <div class="score slider__slide">
+                    <!-- slide 2 -->
+                    <div class="score slider__slide" id="currentMatch">
                       <p class="score__date">
-                        <span class="day">10 марта</span>,&nbsp;<span class="time">18:00</span>
+                        <span class="day">13 марта</span>,&nbsp;<span class="time">18:00</span>
                       </p>
                       <img src="./img/logo/teams/logo-2.png" alt="logo" class="score__team-logo score__team-logo--first">
                       <p class="score__team-name score__team-name--first">Ташкент</p>
                       <p class="score__result">
-                        <span class="res-first">2</span>&nbsp;:&nbsp;<span class="res-second">2</span>
+                        <span class="res-first">0</span>&nbsp;:&nbsp;<span class="res-second">2</span>
                       </p>
-                      <p class="score__status">Завершён</p>
+                      <p class="score__status">Идёт</p>
                       <img src="./img/logo/teams/logo-2.png" alt="logo" class="score__team-logo score__team-logo--second">
                       <p class="score__team-name score__team-name--second">Калининград</p>
                     </div>
 
+                    <!-- slide 3 -->
                     <div class="score slider__slide">
                       <p class="score__date">
-                        <span class="day">8 марта</span>,&nbsp;<span class="time">16:00</span>
+                        <span class="day">14 марта</span>,&nbsp;<span class="time">16:00</span>
                       </p>
                       <img src="./img/logo/teams/logo-1.png" alt="logo" class="score__team-logo score__team-logo--first">
                       <p class="score__team-name score__team-name--first">Калининград</p>
                       <p class="score__result">
-                        <span class="res-first">3</span>&nbsp;:&nbsp;<span class="res-second">4</span>
+                        <span class="res-first">-</span>&nbsp;:&nbsp;<span class="res-second">-</span>
                       </p>
-                      <p class="score__status">Завершён</p>
+                      <p class="score__status">Еще не начался</p>
                       <img src="./img/logo/teams/logo-2.png" alt="logo" class="score__team-logo score__team-logo--second">
                       <p class="score__team-name score__team-name--second">Ташкент</p>
                     </div>
@@ -245,7 +248,7 @@
     </section>
 
     <!-- Секция *РАСПИСАНИЕ* -->
-    <div class="cup__table-schedule container">
+    <section class="cup__table container">
       <!-- Таблица *РАСПИСАНИЕ* -->
       <article class="table-wrap table-wrap--schedule">
         <h2 class="table-wrap__header">Расписание матчей</h2>
@@ -296,7 +299,7 @@
                         <p class="score__team-name score__team-name--first">Калининград</p>
 
                         <p class="score__result">
-                          <span class="res-first">10</span>&nbsp;:&nbsp;<span class="res-second">10</span>
+                          <span class="res-first">2</span>&nbsp;:&nbsp;<span class="res-second">0</span>
                         </p>
 
 
@@ -324,7 +327,7 @@
                         <p class="score__team-name score__team-name--first">Калининград</p>
 
                         <p class="score__result">
-                          <span class="res-first">10</span>&nbsp;:&nbsp;<span class="res-second">10</span>
+                          <span class="res-first">-</span>&nbsp;:&nbsp;<span class="res-second">-</span>
                         </p>
 
 
@@ -342,10 +345,10 @@
           </div>
         </div>
       </article>
-    </div>
+    </section>
 
-    <!-- Секция *ГРУПП* -->
-    <div class="cup__table-grop container">
+    <!-- Секция *ГРУППЫ* -->
+    <section class="cup__table cup__table--group container">
       <!-- Таблицы Группы A -->
       <article class="table-wrap table-wrap--group">
         <h2 class="table-wrap__header">Группа A</h2>
@@ -966,7 +969,157 @@
           </div>
         </div>
       </article>
-    </div>
+    </section>
+
+    <!-- Секция *РЕЗУЛЬТАТЫ* -->
+    <section class="cup__table cup__table--results container">
+      <!-- ПЛЕЙ ОФФ -->
+      <article class="table-wrap table-wrap--results">
+        <h2 class="table-wrap__header">Плей Офф</h2>
+
+        <div class="table-wrap__content">
+          <div class="table table--results">
+            <table class="table__main">
+              <tbody>
+                <!-- Row HEADER  -->
+                <tr class="table__row-header">
+                  <!-- th TEAM  -->
+                  <th class="table__header table__header--team">
+                    <div class="table__wrap">
+                      <span class="table__span">Положение команд</span>
+                    </div>
+                  </th>
+                  <!-- th BALLS  -->
+                  <th class="table__header table__header--balls" title="Мячи">
+                    Голы
+                  </th>
+                </tr>
+
+                <!-- Row 1  -->
+                <tr class="table__row">
+                  <!-- td TEAM  -->
+                  <td class="table__body table__body--team">
+                    <div class="table__wrap">
+                      <span class="table__span table__span--position">1</span>
+                      <span class="table__span table__span--img">
+                          <img src="./img/logo/teams/logo-1.png">
+                        </span>
+                      <span class="table__span table__span--team">
+                          Калининград
+                      </span>
+                    </div>
+
+                    <div class="table__wrap">
+                      <span class="table__span table__span--position">1</span>
+                      <span class="table__span table__span--img">
+                          <img src="./img/logo/teams/logo-1.png">
+                        </span>
+                      <span class="table__span table__span--team">
+                          Калининград
+                      </span>
+                    </div>
+                  </td>
+                  <!-- td BALLS  -->
+                  <td class="table__body table__body--balls">
+                    <div class="table__wrap">0</div>
+                    <div class="table__wrap">10</div>
+                  </td>
+                </tr>
+
+                <!-- Row 2  -->
+                <tr class="table__row">
+                  <!-- td TEAM  -->
+                  <td class="table__body table__body--team">
+                    <div class="table__wrap">
+                      <span class="table__span table__span--position">1</span>
+                      <span class="table__span table__span--img">
+                          <img src="./img/logo/teams/logo-1.png">
+                        </span>
+                      <span class="table__span table__span--team">
+                          Калининград
+                      </span>
+                    </div>
+
+                    <div class="table__wrap">
+                      <span class="table__span table__span--position">1</span>
+                      <span class="table__span table__span--img">
+                          <img src="./img/logo/teams/logo-1.png">
+                        </span>
+                      <span class="table__span table__span--team">
+                          Калининград
+                      </span>
+                    </div>
+                  </td>
+                  <!-- td BALLS  -->
+                  <td class="table__body table__body--balls">
+                    <div class="table__wrap">0</div>
+                    <div class="table__wrap">10</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </article>
+
+      <!-- ФИНАЛ -->
+      <article class="table-wrap table-wrap--results">
+        <h2 class="table-wrap__header">ФИНАЛ</h2>
+
+        <div class="table-wrap__content">
+          <div class="table table--results">
+            <table class="table__main">
+              <tbody>
+                <!-- Row HEADER  -->
+                <tr class="table__row-header">
+                  <!-- th TEAM  -->
+                  <th class="table__header table__header--team">
+                    <div class="table__wrap">
+                      <span class="table__span">Положение команд</span>
+                    </div>
+                  </th>
+                  <!-- th BALLS  -->
+                  <th class="table__header table__header--balls" title="Мячи">
+                    Голы
+                  </th>
+                </tr>
+
+                <!-- Row 1  -->
+                <tr class="table__row">
+                  <!-- td TEAM  -->
+                  <td class="table__body table__body--team">
+                    <div class="table__wrap">
+                      <span class="table__span table__span--position">1</span>
+                      <span class="table__span table__span--img">
+                          <img src="./img/logo/teams/logo-1.png">
+                        </span>
+                      <span class="table__span table__span--team">
+                          Калининград
+                      </span>
+                    </div>
+
+                    <div class="table__wrap">
+                      <span class="table__span table__span--position">1</span>
+                      <span class="table__span table__span--img">
+                          <img src="./img/logo/teams/logo-1.png">
+                        </span>
+                      <span class="table__span table__span--team">
+                          Калининград
+                      </span>
+                    </div>
+                  </td>
+                  <!-- td BALLS  -->
+                  <td class="table__body table__body--balls">
+                    <div class="table__wrap">0</div>
+                    <div class="table__wrap">10</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </article>
+    </section>
   </main>
   <!-- *FOOTER* -->
   <footer class="footer">
