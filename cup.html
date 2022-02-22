@@ -12,6 +12,10 @@
   <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#ff0000">
   <link rel="shortcut icon" href="./favicon/favicon.ico">
   <meta name="theme-color" content="#ffffff">
+  <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/MullerMedium.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/MullerBold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/MullerExtraBold.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="stylesheet" href="css/style.min.css">
   <title>KALININGRAD CUP</title>
 </head>
@@ -109,25 +113,25 @@
   <main class="cup">
     <h1 class="visually-hidden"> Страница KALININGRAD CUP</h1>
 
-    <div class="parallax">
-      <div class="layer layer-1 rellax" data-rellax-speed="-16">
-        <img src="./img/parallax/Union.svg">
+    <div class="parallax-bg">
+      <div class="parallax-bg__layer parallax-bg__layer-1 rellax" data-rellax-speed="-16">
+        <img src="./img/parallax/triangles.svg">
       </div>
 
-      <div class="layer layer-2 rellax" data-rellax-speed="13">
-        <img src="./img/parallax/Rectangle 138.svg">
+      <div class="parallax-bg__layer parallax-bg__layer-2 rellax" data-rellax-speed="13">
+        <img src="./img/parallax/rectangle_1.svg">
       </div>
 
-      <div class="layer layer-3 rellax" data-rellax-speed="20">
-        <img src="./img/parallax/Rectangle 140.svg">
+      <div class="parallax-bg__layer parallax-bg__layer-3 rellax" data-rellax-speed="20">
+        <img src="./img/parallax/rectangle_2.svg">
       </div>
 
-      <div class="layer layer-4 rellax" data-rellax-speed="8">
-        <img src="./img/parallax/Rectangle 139.svg">
+      <div class="parallax-bg__layer parallax-bg__layer-4 rellax" data-rellax-speed="8">
+        <img src="./img/parallax/rectangle_3.svg">
       </div>
 
-      <div class="layer layer-5 rellax" data-rellax-speed="5">
-        <img src="./img/parallax/Rectangle 136.svg">
+      <div class="parallax-bg__layer parallax-bg__layer-5 rellax" data-rellax-speed="5">
+        <img src="./img/parallax/rectangle_4.svg">
       </div>
     </div>
 
@@ -384,12 +388,15 @@
 
         <div class="table-wrap__content">
           <div class="table table--group">
+            <div class="table__shadow"></div>
+
             <table class="table__main">
               <tbody>
                 <!-- Row HEADER  -->
                 <tr class="table__row-header">
                   <!-- th TEAM  -->
                   <th class="table__header table__header--team table__fixed">
+                    <!-- <div class="shadow"></div> -->
                     <div class="table__wrap">
                       <span class="table__span">Положение команд</span>
                     </div>
@@ -591,6 +598,8 @@
 
         <div class="table-wrap__content">
           <div class="table table--group">
+            <div class="table__shadow"></div>
+
             <table class="table__main">
               <tbody>
                 <!-- Row HEADER  -->
@@ -798,6 +807,8 @@
 
         <div class="table-wrap__content">
           <div class="table table--group">
+            <div class="table__shadow"></div>
+
             <table class="table__main">
               <tbody>
                 <!-- Row HEADER  -->
